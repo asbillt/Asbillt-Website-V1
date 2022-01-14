@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Product Design & Software Development | Asbillt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="favicon" href="favicon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="author" content="David Asbill" />
+    <meta name="description" content="Company providing services in Design, Software Development and
+    Project Management." />
+    <meta name="keywords" content="Engineering, Project Management, Software Development, Design, Drawings, Services,
+    Fabrication, Simulations, Innovation, FEA, Finite Element Analysis, CFD, Computational Fluid Dynamics" />
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/0a95b78009.js" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script src="tagcanvas.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        try {
+          TagCanvas.Start('myCanvas','tags',{
+            textColour: '#2a9647',
+            hideTags: false,
+            outlineColour: '#2a9647',
+            reverse: true,
+            depth: 0.8,
+            maxSpeed: 0.05,
+            weight: true,
+            weightMode: "both",
+            // activeCursor: "crosshair",
+            dragControl: true,
+            decel: .95,
+            pinchZoom: true,
+            radiusX: 1.8,
+            radiusY: 1.8,
+            radiusZ: 1.8,
+            zoom: 0.70
+         
+          });
+        } catch(e) {
+          // something went wrong, hide the canvas container
+          document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+      };
+    </script>
+
+    <style>
+
+      .CanvasContainer{
+        grid-column-start: 13;
+        grid-row-start: 3;
+      }
+
+
+    </style>
+
+</head>
+<body>
+
+  <!--Header-->
+  <header class="grid-container-header">
+    <div class="grid-container-buttons">
+      <p class="grid-buttons-item1"><i class="fas fa-phone-alt" style="font-size:large;"></i> Call Us:<br>979-220-0426</p>
+      <a href="mailto:DavidAsbill@asbillt.com" class="grid-buttons-item2"><button class="grid-buttons-item2-inner">Email Us:</button></a>
+  </div>
+        <div class="grid-container-title">
+            <a href="../index.html" class="grid-title-item1"><h1 class="grid-title-item1-inner1">Asbillt<span class="grid-title-item1-inner2">.com</span></h1></a>
+        </div>
+        <div class="grid-container-social">
+            <a href="https://www.linkedin.com/company/asbillt" target="_blank" class="grid-social-items"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/channel/UCDm_r_EwaGjo19LZa-Rglrw?view_as=subscriber" target="_blank" class="grid-social-items"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitter.com/asbillt1" target="_blank" class="grid-social-items"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="grid-social-items"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="grid-social-items"><i class="fab fa-instagram"></i></a>
+        </div>
+        <ul class="ul-container">
+            <li class="li-items"><a class="li-items-inner" href="../index.html" title="Home">Home</a></li>
+            <li class="li-items"><a class="li-items-inner" href="Design/3dmodels.html" title="Design Services">Design</a></li>
+            <li class="li-items"><a class="active li-items-inner" href="software.html" title="Software Services">Software</a></li>
+            <!--<li class="li-items"><a class="li-items-inner" href="contact.html" title="Contact Us">Contact</a></li>-->
+        </ul>
+  </header>
+
+
+  <!--Vertical Navbar-->
+  <ul class="ul-vertical">
+      <li class="li-vertical"><h3>Web</h3></li>
+      <li class="li-vertical"><a class="a-vertical" href="Software/website-design.html">Website Design</a></li>
+      <!--<li class="li-vertical"><a class="a-vertical" href="Software/responsiveweb.html">Responsive Web Design</a></li>
+      <li class="li-vertical"><a class="a-vertical" href="Software/website-management.html">Website Management</a></li>
+      <li class="li-vertical"><a class="a-vertical" href="Software/website-improvement.html">Website Improvement</a></li>
+      <li class="li-vertical"><a class="a-vertical" href="Software/domain.html">Domain Registration</a></li>
+      <li class="li-vertical"><a class="a-vertical" href="Software/frontend.html">Front End/Client Side</a></li>
+      <li class="li-vertical"><a class="a-vertical" href="Software/backend.html">Back End/Server Side</a></li>-->
+  </ul>
+
+
+  <!-- <h1>Donor Sphere Demo</h1> -->
+  <div class="content-container sphere-font">
+    <div id="myCanvasContainer" class="CanvasContainer">
+      <canvas width="800" height="700" id="myCanvas">
+      </canvas>
+    </div>
+    <div id="tags" style="display: none">
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank">React.js</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/AngularJS" target="_blank">Angular.js</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Vue.js" target="_blank">Vue.js</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank">ECMAScript</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">Node.js</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/TypeScript" target="_blank">TypeScript</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Web_application_security" target="_blank">Web Security</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">AJAX</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Microsoft_Visual_Studio" target="_blank">Visual Studio</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">C#</a></li>
+      </ul>
+    </div>
+    <h2 class="content-item-1" style="grid-column-start:6;grid-column-end:10;">Software Services: (Coming Soon..)</h2>
+  </div>
+
+
+  <script src='http://www.goat1000.com/tagcanvas.min.js?2.9'></script>
+  <script src="js/index.js"></script>
+
+
+</body>
+</html>
